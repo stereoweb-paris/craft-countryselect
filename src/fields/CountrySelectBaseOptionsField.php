@@ -99,9 +99,17 @@ class CountrySelectBaseOptionsField extends Field
         if ($this->multi) {
             // Convert the value to a MultiOptionsFieldData object
             $options = [];
-            foreach ($selectedValues as $val) {
-                $label = $this->optionLabel($val);
+            // var_dump($selectedValues);
+            if(count($selectedValues) > 0) {
+              foreach ($selectedValues as $val) {
+                if(is_array($val)) {
+                  $label = $val['label'];
+                  $val = $val['value'];
+                } else {
+                  $label = $this->optionLabel($val);
+                }
                 $options[] = new OptionData($label, $val, true);
+              }
             }
             $value = new MultiOptionsFieldData($options);
         } else {
