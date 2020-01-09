@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## 1.2 - 20109-01-09
+## 1.2 - 2020-01-09
 
 ### Changed
 Forked orginal work by lukeyouell
