@@ -18,7 +18,7 @@ To install the plugin, follow these instructions.
 
 2. Then tell Composer to load the plugin:
 
-        composer require lukeyouell/craft-countryselect
+        composer require andreas83/craft-countryselect
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Country Select.
 
@@ -29,3 +29,4 @@ Some things to do, and ideas for potential features:
 - Disable countries on a per-field basis
 
 Brought to you by [Luke Youell](https://github.com/lukeyouell)
+Maintained by [Andreas Beder] (https://github.com/andreas83)
