@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.2 - 20109-01-09
+
+### Changed
+Forked orginal work by lukeyouell
+
+Merged fix for : 
+
+- Unable to locate message source for category 'country-select'
+- Multiselect Error after saving selected values - Argument must be string, array given 
+
 ## 1.1.2 - 2018-03-16
 
 ### Changed
