@@ -29,4 +29,5 @@ Some things to do, and ideas for potential features:
 - Disable countries on a per-field basis
 
 Brought to you by [Luke Youell](https://github.com/lukeyouell)
-Maintained by [Andreas Beder] (https://github.com/andreas83)
+
+Maintained by [Andreas Beder](https://github.com/andreas83)
