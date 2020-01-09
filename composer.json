@@ -19,7 +19,11 @@
         {
             "name": "Luke Youell",
             "homepage": "https://github.com/lukeyouell"
-        }
+        },
+        {
+            "name": "Andreas Beder",
+            "homepage": "https://github.com/andreas83"
+        }        
     ],
     "require": {
         "craftcms/cms": "^3.0.0"
