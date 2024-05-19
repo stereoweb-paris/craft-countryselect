@@ -48,7 +48,7 @@ class CountrySelectBaseOptionsField extends Field
     /**
      * @inheritdoc
      */
-    public function init()
+    public function init(): void
     {
         parent::init();
 
@@ -83,7 +83,7 @@ class CountrySelectBaseOptionsField extends Field
     /**
      * @inheritdoc
      */
-    public function normalizeValue($value, ElementInterface $element = null)
+    public function normalizeValue(mixed $value, ?ElementInterface $element = null): mixed
     {
         if ($value instanceof MultiOptionsFieldData || $value instanceof SingleOptionFieldData) {
             return $value;
@@ -136,7 +136,7 @@ class CountrySelectBaseOptionsField extends Field
     /**
      * @inheritdoc
      */
-    public function serializeValue($value, ElementInterface $element = null)
+    public function serializeValue(mixed $value, ?ElementInterface $element = null): mixed
     {
         return parent::serializeValue($value, $element);
     }
@@ -150,7 +150,7 @@ class CountrySelectBaseOptionsField extends Field
      * @param string|null $value
      * @return string|null
      */
-    protected function optionLabel(string $value = null)
+    protected function optionLabel(string $value = null): ?string
     {
         if ($this->options) {
             foreach ($this->options as $option) {
@@ -166,7 +166,7 @@ class CountrySelectBaseOptionsField extends Field
     /**
      * @return array
      */
-     protected function translatedOptions()
+     protected function translatedOptions(): array
      {
          $countries = [
              ['value' => 'AD', 'label' => Craft::t('app', 'Andorra')],
